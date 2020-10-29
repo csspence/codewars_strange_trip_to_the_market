@@ -8,6 +8,19 @@ There are only 2 guaranteed ways to tell if you are speaking to The Loch Ness Mo
 Since Nessie is a master of disguise, the only way accurately tell is to look for the phrase "tree fiddy". Since you are tired of being grifted by this monster, the time has come to code a solution for finding The Loch Ness Monster. Note: It can also be written as 3.50 or three fifty.
 */
 
-function isLockNessMonster(s) {
-  //FIND THE LOCH NESS MONSTER. SAVE YOUR TREE FIDDY
+const isLockNessMonster = (s) => {
+  let num = '3.50';
+  let string = 'tree fiddy';
+  let string2 = 'three fifty';
+  if(s.includes(num) === true) {
+    return true;
+  }
+  if(s.includes(string) === true) {
+    return true;
+  }
+  if(s.includes(string2) === true) {
+    return true;
+  }
+
+  return false;
 }
